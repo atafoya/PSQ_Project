@@ -1,0 +1,1 @@
+Warning: this Simulink model doesn't have a xfmr from the substation to node 650, it is just a 1e-6 resistance. Actual Voltages after we model that will be lower.

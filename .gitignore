@@ -3,6 +3,7 @@
 *.slxc
 slprj*
 *.asv
+*.r2019b
 
 # tmp, lock, etc. files
 *.kate-swp
