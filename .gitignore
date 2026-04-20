@@ -1,2 +1,9 @@
+
+# MATLAB temporary files
 *.slxc
 slprj*
+*.asv
+
+# tmp, lock, etc. files
+*.kate-swp
+~*
