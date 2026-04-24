@@ -4,6 +4,7 @@
 slprj*
 *.asv
 *.r2019b
+*.autosave
 
 # tmp, lock, etc. files
 *.kate-swp

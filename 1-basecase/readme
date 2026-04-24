@@ -2,5 +2,5 @@ Warning: this Simulink model doesn't have a xfmr from the substation to node 650
 
 ## TODO
 
-- model xfmr from the substation to node 650 (maybe just a RC series branch, IDK)
+- model xfmr from the substation to node 650 (maybe just a RL series branch, IDK)
 - change Bus numbers (1-14) to Node numbers (632,634,...)
