@@ -1,0 +1,5 @@
+
+## Beware of dragons
+
+Ezra told me their group wasted a lot of time on part 3 the Solar park. They tried to use an actual PV block, but it didn't work properly. It was easier to just model the PV system as a Current Source, and change the current level based on what it would be at different irradiances. 
+
