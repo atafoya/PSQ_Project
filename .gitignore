@@ -9,3 +9,4 @@ slprj*
 # tmp, lock, etc. files
 *.kate-swp
 ~*
+.~lock*
