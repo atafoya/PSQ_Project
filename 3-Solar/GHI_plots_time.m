@@ -1,3 +1,5 @@
+% https://claude.ai/share/6da1f4c2-ef45-428a-940c-0c98cc210244
+
 % --- Parameters ---
 peak_GHI   = 1000;   % W/m^2 (summer clear sky)
 sunrise    = 5.5;    % hours (5:30 AM)
