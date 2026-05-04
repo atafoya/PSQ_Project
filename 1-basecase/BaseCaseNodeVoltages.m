@@ -30,13 +30,18 @@ plot(Va,'k','Linewidth',2);
 plot(Vb,'r','Linewidth',2);
 plot(Vc,'b','Linewidth',2);
 yline([0.95,1.05],'Color','#888888')
-titletext='Phase Voltages - Base Case Power at PCC: '+string(round(Powers(1),2))+' kW + '+string(round(Powers(2),2))+' kvar'
+titletext='Phase Voltages - Base Case Power at PCC: '+string(round(Powers(1),2))+' kW + '+string(round(Powers(2),2))+' kvar';
 title(titletext)
 legend('Phase A','Phase B','Phase C')
-xlabel('Bus')
+xlabel('Node')
 ylabel('V pu ')
 fontsize(16,'point');
 saveas(gcf,'1basecase.png')
+
+%nodes
+n=[650 632 633 634 645 646 671 680 684 652 692 675];
+%setting Vpcc to 1pu
+Va(1)=1;Vb(1)=1;Vc(1)=1;
 
 figure(2);
 hold on;
@@ -45,10 +50,10 @@ y=[];
 for i=1:12;
     y=[y Va(i)];
 end
-bar(y,'FaceColor','red');
-titletext='Phase A Voltage Per Bus';
+bar(n,y,'FaceColor','red');
+titletext='Phase A Voltage Per Node';
 title(titletext)
-xlabel('Bus')
+xlabel('Node')
 ylabel('V pu ')
 fontsize(16,'point');
 saveas(gcf,'1basecase.png')
@@ -59,10 +64,10 @@ x=[];
 for i=1:12;
     x=[x Vb(i)];
 end
-bar(x,'FaceColor','m');
-titletext='Phase B Voltage Per Bus';
+bar(n,x,'FaceColor','m');
+titletext='Phase B Voltage Per Node';
 title(titletext)
-xlabel('Bus')
+xlabel('Node')
 ylabel('V pu ')
 fontsize(16,'point');
 saveas(gcf,'1basecase.png')
@@ -73,10 +78,10 @@ z=[];
 for i=1:12;
     z=[z Vc(i)];
 end
-bar(z,'FaceColor','c');
-titletext='Phase C Voltage Per Bus';
+bar(n,z,'FaceColor','c');
+titletext='Phase C Voltage Per Node';
 title(titletext)
-xlabel('Bus')
+xlabel('Node')
 ylabel('V pu ')
 fontsize(16,'point');
 saveas(gcf,'1basecase.png')
