@@ -1,3 +1,13 @@
+%I brute forced the fuck out of this :)
+%to run you need to run the sim for each load level and:
+%change the resistor power to .1*, .4*, .5*,
+%you then need to rename the to workspace as:
+%  V680_100 for the 100% rated, 
+%  V860_50 for the 50% rated and so on
+%once you've run all 4 sims with the correct names and rated loads run this
+%code
+
+
 vbase=4160/sqrt(3);
 ibase=(400*10^3)/(sqrt(3)*4160);
 va100=(V680_100.Data(end,1))/vbase;
